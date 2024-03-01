@@ -53,5 +53,11 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
  * Return: Pointer to the created node, or NULL on failure or if parent is NULL
  */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+/**
+ * binary_tree_delete - Deletes an entire binary tree
+ *
+ * @tree: Pointer to the root node of the tree to delete
+ */
+void binary_tree_delete(binary_tree_t *tree);
 
 #endif 
