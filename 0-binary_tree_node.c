@@ -8,16 +8,13 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-    binary_tree_t *xin_node; /* Declare xin_node to hold the new node */
+    binary_tree_t *xin_node;
 
-    /* Allocate memory for the new node */
     xin_node = (binary_tree_t *)malloc(sizeof(binary_tree_t));
-    if (xin_node == NULL)
-    {
+    if (xin_node == NULL) {
         return NULL;  
     }
 
-    /* Initialize node fields */
     xin_node->n = value;
     xin_node->parent = parent;
     xin_node->left = NULL;
